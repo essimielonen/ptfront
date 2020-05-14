@@ -98,6 +98,7 @@ const columns = [
     {
         Header: 'Firstname',
         accessor:'firstname'
+
     },
     {
         Header: 'Lastname',
