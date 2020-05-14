@@ -61,7 +61,7 @@ console.log('addtraining props', props)
                             name="date"
                             value={training.date}
                             onChange={inputChanged}
-                            label="Date (DD.MM.YYYY)"
+                            label="Date (muodossa DD.MM.YYYY)"
                             fullWidth
                             />
                             
