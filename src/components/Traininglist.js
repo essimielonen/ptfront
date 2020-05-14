@@ -94,30 +94,28 @@ const columns = [
         Header: 'Date',
         accessor:'date',
         Cell: row => (moment(row.value).format('DD.MM.YYYY')),
+        maxWidth: 200
         
     },
 
     {
         Header: 'Duration',
         accessor: 'duration',
-        maxWidth: 150
+        maxWidth: 200
         
     },
     {
         Header: 'Activity',
-        accessor: 'activity'
+        accessor: 'activity',
+        
     },
     {
         Cell: row => (<Edittraining training={row.original} updateTraining={updateTraining}/>),
-        maxWidth: 150
+        maxWidth: 200
     },
     {
         Cell: row => (<Button size="small" color="secondary" onClick={() => deleteTraining(row.original.links[0].href)}>Delete</Button>),
-        maxWidth: 150
-    },
-    {
-        Header: 'Customer',
-        accessor: 'links[1].href'
+        maxWidth: 200
     },
 ]
 
