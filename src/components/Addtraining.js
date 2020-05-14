@@ -45,7 +45,7 @@ console.log('addtraining props', props)
 
     return(
         <div>
-            <Button size="small" color="primary" onClick={handleClickOpen}>
+            <Button style={{margin: 10}} variant="outlined" color="primary" size="small" onClick={handleClickOpen}>
         Add training
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
