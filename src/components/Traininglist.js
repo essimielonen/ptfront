@@ -93,22 +93,27 @@ const columns = [
     {
         Header: 'Date',
         accessor:'date',
-        Cell: row => (moment(row.value).format('DD.MM.YYYY'))
+        Cell: row => (moment(row.value).format('DD.MM.YYYY')),
+        
     },
 
     {
         Header: 'Duration',
-        accessor: 'duration'
+        accessor: 'duration',
+        maxWidth: 150
+        
     },
     {
         Header: 'Activity',
         accessor: 'activity'
     },
     {
-        Cell: row => (<Edittraining training={row.original} updateTraining={updateTraining}/>)
+        Cell: row => (<Edittraining training={row.original} updateTraining={updateTraining}/>),
+        maxWidth: 150
     },
     {
-        Cell: row => (<Button size="small" color="secondary" onClick={() => deleteTraining(row.original.links[0].href)}>Delete</Button>)
+        Cell: row => (<Button size="small" color="secondary" onClick={() => deleteTraining(row.original.links[0].href)}>Delete</Button>),
+        maxWidth: 150
     },
     {
         Header: 'Customer',
