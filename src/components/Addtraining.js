@@ -10,9 +10,6 @@ import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 
-
-
-
 export default function Addtraining(props) {
 console.log('addtraining props', props)
     
@@ -61,7 +58,7 @@ console.log('addtraining props', props)
                             name="date"
                             value={training.date}
                             onChange={inputChanged}
-                            label="Date (muodossa DD.MM.YYYY)"
+                            label="Date (DD.MM.YYYY)"
                             fullWidth
                             />
                             
