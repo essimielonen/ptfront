@@ -122,6 +122,7 @@ const columns = [
     return (
         <div>
             <Addtraining customers={customers} addTraining={addTraining} />
+            <h2>TRAININGS</h2>
             <ReactTable defaultPageSize={10} filterable={true} data={trainings} columns={columns} />
             <Snackbar 
             open={open}
