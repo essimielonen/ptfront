@@ -45,7 +45,7 @@ console.log('addtraining props', props)
 
     return(
         <div>
-            <Button style={{margin: 10}} variant="outlined" color="primary" size="small" onClick={handleClickOpen}>
+            <Button style={{marginTop: 10}} variant="outlined" color="primary" size="small" onClick={handleClickOpen}>
         Add training
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
@@ -83,7 +83,7 @@ console.log('addtraining props', props)
                             />
 
 <InputLabel id="customer">Customer</InputLabel>
-        <Select
+        <Select  
           labelId="customerLabel"
           id="customerLabel"
           value={training.customer}
