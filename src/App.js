@@ -24,7 +24,7 @@ function App() {
         </Toolbar>
       </AppBar>
 
-      <Router> 
+       <Router> 
     <div>
     <Link to="/customerlist">All Customers</Link>{' '}
     <br></br> <br></br>
@@ -33,7 +33,7 @@ function App() {
     <Route path="/customerlist/" component={Customerlist} />
     <Route path="/traininglist/" component={Traininglist} />
     </div>
-      </Router>
+      </Router> 
 
     </div>
   );
