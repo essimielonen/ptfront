@@ -93,7 +93,7 @@ const handleClose = () => {
 
 const columns = [
     {
-        Cell: row => (<Addtraining customers={customers} training={row.original} addTraining={addTraining}/>)
+       Cell: row => (<Addtraining customers={customers} training={row.original} addTraining={addTraining}/>)
     },
     {
         Header: 'Firstname',
@@ -132,6 +132,7 @@ const columns = [
     return (
         <div>
             <Addcustomer addCustomer={addCustomer} />
+            <h2>CUSTOMERS</h2>
             <ReactTable defaultPageSize={10} filterable={true} data={customers} columns={columns} />
             <Snackbar 
             open={open}
